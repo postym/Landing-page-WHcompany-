@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Dancing+Script:wght@500&family=Domine&family=Dongle:wght@300;400&family=Lobster&family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=Neonderthaw&family=PT+Serif:ital,wght@0,400;1,400;1,700&family=The+Nautigal:wght@700&family=Zilla+Slab:ital,wght@1,300&display=swap');
+
+*{
+	margin: 10;
+	padding: 5;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+section{
+	position: relative;
+	width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(editedd.jpg) no-repeat;
+
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+	position: relative;
+	top: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo{
+	position: relative;
+	color:#FFF;
+	background: #111;
+	text-decoration: blink;
+	text-transform: capitalize;
+	padding: 15px 25px;
+	border-radius: 5px;
+	margin-top: 5px;
+	font-size: 40px;
+	font-weight: 800;
+	letter-spacing: 5px;
+	margin: 10;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+header .navigation a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 2px 15px;
+	border-radius: 20px;
+	transition: 0.3s;
+	transition-property: background;
+	font-family: 'Poppins', sans-serif;
+}
+
+header .navigation a:not(:last-child){
+	margin-right: 30px;
+}
+
+header .navigation a:hover{
+	background: #5a5b5c;
+}
+
+#login-form{
+	display: none;
+}
+
+.form-box{
+	width: 380px;
+	height: 450px;
+	position: relative;
+	margin top: 20px;
+	background: rgba(39, 40, 41, 0.9);
+	padding: 10px;
+	overflow: hidden;
+	border: 1px solid;
+}
+
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+
+.toogle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.input-group-login{
+	top: 150px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+
+.input-group-register{
+	top: 120px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.check-box{
+	margin: 30px 10px 34px 0;
+}
+
+span{
+	color: #fff;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+
+#login{
+	left: 50px;
+}
+
+#login input{
+	color: #fff;
+	font-size: 15;
+}
+
+#register{
+	left: 450px;
+}
+
+#register input{
+	color: #fff;
+	font-size: 15;
+}
+
+.content{
+	max-width: 650px;
+	margin: 60px 100px;
+}
+
+.content .info h2{
+	color: #111;
+	font-size: 55px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px;
+	line-height: 60px;
+	margin-bottom: 30px;
+	margin-left: -40px;
+	margin-top: 10px;
+	text-align: center;
+
+}
+
+.content .info h2 span{
+	color: #fff;
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'Yellowtail', cursive;;
+	margin-top: 10px;
+	line-height: 20px;
+	text-align: justify;
+	position: static;
+}
+
+.content .info p{
+	font-size: 16px;
+	font-weight: 500;o
+	margin-bottom: 40px;
+	margin-top: 60px;
+	color: #fff;
+	line-height: 20px;
+	text-align: justify;
+
+}
+
+.content .info-btn{
+	color:#fff;
+	background: #363738;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	transition: 0.3s;
+	transition-property: background;
+	margin-top: 20px;
+	position: absolute;
+}
+
+.content .info-btn span{
+    position: absolute;
+    bottom: -60px;
+    left: -20px;
+    white-space: pre;
+    pointer-events: none;
+    display: inline-block;
+	color: #111;
+	padding: 15px 25px;
+	font-size:  1vw;
+	font-weight: 200px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: 'Dongle', sans-serif;
+	justify-content: center;
+}
+
+.content .info-btn:hover{
+	background: #111;
+}
+
+.media-icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 60px;
+}
+
+.media-icons a{
+	position: relative;
+	color: #111;
+	font-size: 25px;
+	transition: 0.3s;
+	transition-property: transform;
+	margin-bottom: 20px;
+}
+
+.media-icons a:not(:last-child){
+	margin-right: 60px;
+}
+
+.media-icons a:hover{
+	transform: scale(1.5);
+}
+
+label{
+	display: none;
+}
+
+#check{
+	z-index: 3;
+	display: none;
+}
+
+/* Responsive styles */
+
+@media (max-width: 960px){
+	header .navigation{
+		display: none;
+	}
+
+	label{
+		display: block;
+		font-size: 25px;
+		cursor: pointer;
+		transition: 0.3s;
+		transition-property: color;
+	}
+
+	label:hover{
+		color: #fff;
+	}
+
+	label .close-btn{
+		display: none;
+		color: #fff;
+	}
+
+	#check:checked ~ header .navigation{
+		z-index: 2;
+		position: fixed;
+		background: rgba(39, 40, 41, 0.9);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#check:checked ~ header .navigation a{
+		font-weight: 700;
+		margin-right: 0;
+		margin-bottom: 50px;
+		letter-spacing: 2px;
+	}
+
+	#check:checked ~ header label .menu-btn{
+		display: none;
+    }
+
+    #check:checked ~ header label .close-btn{
+    	z-index: 2;
+    	display: block;
+    	position: fixed;
+    } 
+
+    label .menu-btn{
+    	position: absolute;
+    	color: #fff;
+    }
+
+    header .logo{
+    	position: absolute;
+    	bottom: -6px;
+    }
+
+    .content .info h2{
+    	font-size: 45px;
+    	line-height: 50px;
+    }
+
+    .content .info h2 span{
+    	font-size: 30px;
+    	font-weight: 600;
+    }
+
+    .content .info p{
+    	font-size: 14px;
+    }
+}
+
+@media (max-width: 560px){
+	.content .info h2{
+    	font-size: 35px;
+    	line-height: 40px;
+    }
+
+    .content .info h2 span{
+    	font-size: 20px;
+    	font-weight: 600;
+    }
+
+    .content .info p{
+    	font-size: 14px;
+    }
+}
